@@ -118,8 +118,9 @@ def _init_worker_data():
     try:
         for i in range(0, work_num):
             worker_data[i] = Manager().Queue()
-    except Exception, e:
+    except Exception as e:
         logging.warn("Manager().Queue()初始化失败！")
+        raise RuntimeError("Manager().Queue()初始化失败！")
     return worker_data
 
 
