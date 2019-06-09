@@ -1,0 +1,7 @@
+{
+  "Local":{
+    "items":["CPU", "MEMORY"],
+    "trigger":[],
+    "batch": 1
+  }
+}
